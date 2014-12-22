@@ -162,6 +162,63 @@ or equal to), == (equal to), and != (not equal to).
 >
 > 2 === "2" // yields result __false__ (as the value comes to be same, however type differes 2 -> Number, "2" -> String
 
+### Logical operators
+
+- JavaScript supports three logical operators: and, or, and not.
+
+- And is reprensented as __&&__, Or is represented as __||__ and not is reprensed as __!__
+
+> Example
+>
+> true && false // yields __false__ (as AND operator needs both values/expresions to be true
+>
+> true || false // yields __true__ (as OR operator needs any of the values/expresion to be true
+>
+> !true // yields __false__ (as NOT operator reverts the state of expression)
+
+- There is another type of operator which is known as ternary operator, as it operates over 3 values.
+
+> Example
+> 
+> (true ? 1 : 2) // yields result as __1__ 
+
+As in the above example the booleab variable is true, so it accepts the value that is written very next to __?__,
+you can read it as 
+
+> expression ? if_expression_is_true_I_Win : if_expression_is_false_I_win
+
+Fun Facts
+---------
+
+- What will happen if you try to compare the below written statements
+
+> NaN == NaN (this will return __false__, this is the only javascript value which is not equal to itself)
+>
+> undefined == null (this will return __true__)
+
+- In javascript 1 always holds a state of __true__ and 0 hold the __false__ boolean state.
+
+> Example
+>
+> 0 == false // yields result as __true__
+>
+> 1 == true // yields result as __true__
+
+- Automatic type conversion: When an operator is applied to the “wrong” type of value, JavaScript will
+quietly convert that value to the type it wants, using a set of rules that
+often aren’t what you want or expect. This is called type coercion.
+
+> Example
+> (8 * null) //yields result → 0
+>
+> ("5" - 1) // yields result → 4 (as string operator doesnt understand "-", javascript evaluates string as number)
+>
+> ("5" + 1) // yields result → 51 (javascript converts number into string, as soon as it sees any value is string)
+>
+> (" five " * 2) // yields result → NaN (as there is no method defined in javascript that can multiply a string with number)
+
+
+
 
 
 
