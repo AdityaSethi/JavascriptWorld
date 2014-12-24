@@ -9,6 +9,31 @@
 - There are six basic types of values in JavaScript:
 Numbers, Strings, Booleans, Objects, Functions, and Undefined values.
 
+- Use typeof to find the type of value.
+
+> Example
+> 
+> typeof(1)               //"number"
+>
+> typeof("a")             //"string"
+>
+> typeof(true)            //"boolean"
+>
+> typeof({})              //"object"
+>
+> typeof(function(){})    //"function"
+>
+> typeof(undefined)       //"undefined"
+>
+> Fun facts:
+>
+> typeof(NaN)
+>
+> typeof(null)
+>
+> typeof(/''/)
+
+
 ### Numbers
 
 - Any numeric value in javascript belongs to Number type.
