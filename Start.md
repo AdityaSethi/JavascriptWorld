@@ -44,6 +44,7 @@ Numbers, Strings, Booleans, Objects, Functions, and Undefined values.
 
 ?? Memory allocation ??
 
+- Internally, Numbers are saved in 64 bit floating point format (Java's double) 
 - Fractional numbers (float) alo belong to number type.
 
 > Example
