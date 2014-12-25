@@ -241,6 +241,13 @@ you can read it as
 >
 >  MathConstructor {E: 2.718281828459045, LN10: 2.302585092994046, LN2: 0.6931471805599453, LOG2E:        1.4426950408889634, LOG10E: 0.4342944819032518…}
 
+### Type coercion:
+-	== vs ===
+-	!= vs !==
+- undefined and NaN are not constants and can be changed.
+- When comparing to any of the following values, always use the === or !== operators, which do not do type coercion:
+    0 '' undefined null false true
+
 
 Fun Facts
 ---------
