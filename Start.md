@@ -225,6 +225,23 @@ you can read it as
 8. ||							(Logical or)
 9. ?:							(Ternary)
 
+### Native Constructor Functions:
+- Number()
+- String()
+- Boolean()
+- Object()
+- Array()
+- Function()
+- Regexp()
+- Date()
+- Error()
+
+### Built In JavaScript Object:
+> Math
+>
+>  MathConstructor {E: 2.718281828459045, LN10: 2.302585092994046, LN2: 0.6931471805599453, LOG2E:        1.4426950408889634, LOG10E: 0.4342944819032518…}
+
+
 Fun Facts
 ---------
 
