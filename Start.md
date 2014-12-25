@@ -214,6 +214,17 @@ you can read it as
 
 > expression ? if_expression_is_true_I_Win : if_expression_is_false_I_win
 
+### Operators in order of their precedence:
+1. . \[] \()						(Refinement and invocation)
+2. delete new typeof + - !		(Unary operators)
+3.  */ %						(Multiplication, division, modulo)
+4. +-							(Addition/concatenation, subtraction)
+5. >= <= > <					(Inequality)
+6. === !==						(Equality)
+7. &&							(Logical and)
+8. ||							(Logical or)
+9. ?:							(Ternary)
+
 Fun Facts
 ---------
 
