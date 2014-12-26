@@ -292,6 +292,16 @@ often aren’t what you want or expect. This is called type coercion.
 
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/86786ebc0c65067cd5fd569fda629c70b1f5cde1/images/3%20-%20number.png)
 
+### String:
+>
+> Using string literal:
+>
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/65cdf182f0ecdfcf7783fa729b8907a0ba9cecf8/images/4%20-%20string.png)
+>
+> Using escape character:
+>
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/65cdf182f0ecdfcf7783fa729b8907a0ba9cecf8/images/5%20-%20string.png)
+
 
 
 
