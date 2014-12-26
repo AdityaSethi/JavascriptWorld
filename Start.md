@@ -279,6 +279,19 @@ often aren’t what you want or expect. This is called type coercion.
 >
 > (" five " * 2) // yields result → NaN (as there is no method defined in javascript that can multiply a string with number)
 
+1.2 Grammer
+-----------
+
+### Name:
+![alt text](https://github.com/AdityaSethi/JavascriptWorld/blob/86786ebc0c65067cd5fd569fda629c70b1f5cde1/images/1%20-%20name.png)
+
+
+### Number (integer, fraction, exponent):
+
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/86786ebc0c65067cd5fd569fda629c70b1f5cde1/images/2%20-%20number.png)
+
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/86786ebc0c65067cd5fd569fda629c70b1f5cde1/images/3%20-%20number.png)
+
 
 
 
