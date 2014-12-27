@@ -327,6 +327,18 @@ often aren’t what you want or expect. This is called type coercion.
 #### for statement:
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/12%20-%20for.png)
 
+#### try statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/14%20-%20try.png)
+
+#### throw statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/15%20-%20throw.png)
+
+#### return statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/16%20-%20return.png)
+
+#### break statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/17%20-%20break.png)
+
 
 
 
