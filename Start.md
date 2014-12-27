@@ -324,6 +324,9 @@ often aren’t what you want or expect. This is called type coercion.
 #### do while statement:
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/13%20-%20do%20while.png)
 
+#### for statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/12%20-%20for.png)
+
 
 
 
