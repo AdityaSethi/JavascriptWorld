@@ -307,8 +307,18 @@ often aren’t what you want or expect. This is called type coercion.
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/6%20-%20var.png)
 
 ### Statements:
-
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/7%20-%20statement.png)
+
+#### Disruptive statment:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/8%20-%20disruptive.png)
+
+#### Switch statment:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/9%20-%20switch.png)
+
+#### case clause:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/10%20-%20case.png)
+
+
 
 
 
