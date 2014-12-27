@@ -312,11 +312,19 @@ often aren’t what you want or expect. This is called type coercion.
 #### Disruptive statment:
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/8%20-%20disruptive.png)
 
-#### Switch statment:
+#### switch statment:
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/9%20-%20switch.png)
 
 #### case clause:
 ![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/10%20-%20case.png)
+
+#### while statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/11%20-%20while.png)
+
+#### do while statement:
+![alt text] (https://github.com/AdityaSethi/JavascriptWorld/blob/2a1567e4b41c0a94ec17792e55a3c0b0061167c7/images/13%20-%20do%20while.png)
+
+
 
 
 
