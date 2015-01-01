@@ -23,12 +23,15 @@ angular.module('trainingApp')
       {
      		type: 'concept',
      		content: '<h2>Concept 2</h2>',
-     		bullets: [
-     			'Point 11',
-     			'Point 22',
-     			'Point 33'
-     		],
+        image: "images/1 - name.png",
      		note: "Note on point 11"
+      },
+      {
+        type: 'code',
+        content: "(function() { \n\
+          return 'hi'; \n\
+        })()",
+        note: "Note on point 11"
       },
       {
      		type: 'concept',

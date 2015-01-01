@@ -11,7 +11,7 @@
 	}
  */
 angular.module('trainingApp')
-  .directive('slideRunner', function () {
+  .directive('slideRunner', function ($sce) {
     return {
       templateUrl: 'views/slide-runner.html',
       restrict: 'E',
@@ -23,6 +23,7 @@ angular.module('trainingApp')
       	scope.slide = scope.slides[scope.currentSlide];
       	scope.nextSlide = nextSlide;
       	scope.prevSlide = prevSlide;
+        scope.runCode = runCode;
 
       	function nextSlide() {
       		if(scope.currentSlide < scope.slides.length - 1){
@@ -35,6 +36,11 @@ angular.module('trainingApp')
       			scope.currentSlide = scope.currentSlide - 1;	
       		}
       	}
+
+        function runCode() {
+          var code = $sce.trustAsJs(scope.slides[scope.currentSlide].content);
+          scope.codeOutput = eval('(' + code + ')');
+        }
 
       }
     };
