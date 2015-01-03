@@ -8,11 +8,11 @@
 		  			{{bullet}}
 		  		</li>
 		  </div>
-		  <img ng-if="slides[currentSlide].image" height="220" width="560" ng-src="{{slides[currentSlide].image}}" />
+		  <img ng-if="slides[currentSlide].image" ng-src="{{slides[currentSlide].image}}" />
 		</div>
 
 		<div ng-if="slides[currentSlide].type === 'code'">
-		  <pre ng-bind-html="slides[currentSlide].content" contentEditable="true"></pre>
+		  <pre ng-bind-html="slides[currentSlide].content" contenteditable ng-model="slides[currentSlide].content"></pre>
 		  <button class="btn btn-primary" ng-click="runCode()">Run</button>
 		  <h5>Output</h5>
 		  <pre ng-bind="codeOutput"></pre>
