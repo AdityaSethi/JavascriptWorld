@@ -28,6 +28,7 @@ angular.module('trainingApp')
       },
       {
         type: 'code',
+        title: 'Edit/run code',
         content: "(function() { \n\
           return 'hi'; \n\
         })()",

@@ -12,6 +12,7 @@
 		</div>
 
 		<div ng-if="slides[currentSlide].type === 'code'">
+			<h2>{{slides[currentSlide].title}} :</h2>
 		  <pre ng-bind-html="slides[currentSlide].content" contenteditable ng-model="slides[currentSlide].content"></pre>
 		  <button class="btn btn-primary" ng-click="runCode()">Run</button>
 		  <h5>Output</h5>
