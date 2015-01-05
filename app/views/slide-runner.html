@@ -1,4 +1,4 @@
-<div class="well">
+<div class="well well-box">
 	<div class="jumbotron">
 	  <div ng-if="slides[currentSlide].type === 'concept'">
 		  <div ng-bind-html="slides[currentSlide].content"></div>
@@ -29,7 +29,7 @@
 		ng-disabled="currentSlide === 0"
 		ng-class="{ 'btn-primary': currentSlide === slides.length - 1 }"
 		ng-click="prevSlide()">Prev</button>
-	<button class="btn btn-primary pull-right"
+	<button class="btn btn-primary btn-next"
 		ng-disabled="currentSlide === slides.length - 1"
 		ng-click="nextSlide()">Next</button>
 </div>

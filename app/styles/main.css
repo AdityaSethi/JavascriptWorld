@@ -48,6 +48,20 @@ body {
   margin: 30px 0;
 }
 
+.well-box {
+  position: relative;
+  min-height: 600px;
+}
+
+.well-box > .btn {
+  position: absolute;
+  bottom: 20px;
+}
+
+.btn-next {
+  right: 20px;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   border-bottom: 1px solid #e5e5e5;
