@@ -53,7 +53,7 @@ body {
   min-height: 600px;
 }
 
-.well-box > .btn {
+.btn-prev, .btn-next {
   position: absolute;
   bottom: 20px;
 }
