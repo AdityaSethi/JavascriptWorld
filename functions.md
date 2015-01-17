@@ -4,13 +4,15 @@ Functions
 - Function wraps a logical block of code. It is useful to structure larger programs, improve readability and reduce repetition.
 - Function anatomy in JavaScript:
 
+		//function declaration
         function functionName(parameters) {
-          //body ...
+          	//body ...
         
-          //return ...	
+          	//return ...	
         }
         
-        functionName(parameters) //function call
+        //function call
+        functionName(parameters)
 
 - Function returns undefined by default.
 
@@ -46,12 +48,14 @@ Functions
 - Function can be used as value since it is an object in JavaScript.
 - It can be assigned to variable, passed as parameter to another another function and even returned from a function.
 
-				var add = function (a, b) {
-				  return a + b;
-				}
-				
-				add(1, 2);
+		var add = function (a, b) {
+		  	return a + b;
+		}
+		
+		add(1, 2);
 
+- This is called function expression.
+- What is function hoisting ? function declaration vs function expression ?
 - Even array of functions is possible.
 - Function being an object has properties:
 	- name
