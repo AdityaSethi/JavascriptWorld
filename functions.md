@@ -25,20 +25,38 @@ Functions
 - Functions can be created inside other functions, producing nested scope/localities.
 
         function A() {
-        	var a = 'a';
-        	B();
-        	function B() {
-        		var b = a + 'b';
-        		C();
-        		function C() {
-        			var c = b + 'c';
-        			console.log(c);
-        		}
-        		//console.log(c);
-        	}
-        	console.log(b);
+          var a = 'a';
+          B();
+          function B() {
+            var b = a + 'b';
+            C();
+            function C() {
+              var c = b + 'c';
+              console.log(c);
+            }
+            //console.log(c);
+          }
+          console.log(b);
         };
         
         This is called lexical scoping.
     		
 	
+## Functions are first class citizens:
+- Function can be used as value since it is an object in JavaScript.
+- It can be assigned to variable, passed as parameter to another another function and even returned from a function.
+
+				var add = function (a, b) {
+				  return a + b;
+				}
+				
+				add(1, 2);
+
+- Even array of functions is possible.
+- Function being an object has properties:
+	- name
+	- arguments
+	- See add. in console
+
+				add.call(null, 1, 2);
+				add.apply(null, [1, 2]);
