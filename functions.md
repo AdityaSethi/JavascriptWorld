@@ -73,6 +73,15 @@ Functions
 
 			add.call(null, 1, 2);
 			add.apply(null, [1, 2]);
+			
+- Even with function declaration, function names acts as variables holding the piece of code defined in it.
+	 
+		function test() { console.log('testing'); }
+		test();
+		test = 1;
+		test();	// number is not a function
+		console.log(test);	// 1
+	
 
 
 ## Closure:
