@@ -16,6 +16,15 @@ Functions
 
 - Function returns undefined by default.
 
+## Immediately invoked function expression (IIFE):
+
+	(function () { return 'I called myself'; })()
+
+- It can run only once. It's can't be called again.
+- Provides name scoping.
+- Prevents global namescope pollution.
+- First step towards magic of function scope.
+
 ## Scope:
 - scope is the set of variables, objects, and functions you have access to.
 - JavaScript has function scope only.
