@@ -25,18 +25,18 @@ Functions
 - Functions can be created inside other functions, producing nested scope/localities.
 
         function A() {
-          var a = 'a';
-          B();
-          function B() {
-            var b = a + 'b';
-            C();
-            function C() {
-              var c = b + 'c';
-              console.log(c);
-            }
-            //console.log(c);
-          }
-          console.log(b);
+	          var a = 'a';
+	          B();
+	          function B() {
+		            var b = a + 'b';
+		            C();
+		            function C() {
+			              var c = b + 'c';
+			              console.log(c);
+		            }
+		            //console.log(c);
+	          }
+	          console.log(b);
         };
         
         This is called lexical scoping.
