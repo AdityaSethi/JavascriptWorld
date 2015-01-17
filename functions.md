@@ -115,3 +115,27 @@ Functions
 		})()()();
 
 - Think of Closure as returning a handle to a piece of computation, frozen for later use.
+
+...
+
+
+Higher-Order Functions
+======================
+
+- A large program is a costly program.
+- Large size brings in complexity and confuses programmers and invites bugs that are hard to find.
+
+		var total = 0, count = 1; while (count <= 10) {
+		total += count;
+		count += 1; }
+		console.log(total);
+		
+		OR
+		
+		console.log(sum(range(1, 10)));
+	
+	
+- sum and range are expressing simpler concepts than the program as a whole, they are easier to get right.
+- This is called abstraction.
+
+
