@@ -138,4 +138,55 @@ Higher-Order Functions
 - sum and range are expressing simpler concepts than the program as a whole, they are easier to get right.
 - This is called abstraction.
 
+## Abstraction:
 
+- Abstractions hide details and give us the ability to talk about problems at a higher (or more abstract) level.
+- As an analogy, compare these two recipes for pea soup:
+
+		Put 1 cup of dried peas per person into a container. Add water until the peas are well covered.
+		
+		Leave the peas in water for at least 12 hours.
+		
+		Take the peas out of the water and put them in a cooking pan.
+		
+		Add 4 cups of water per person. Cover the pan and keep the peas simmering for two hours.
+		
+		Take half an onion per person. Cut it into pieces with a knife. Add it to the peas.
+		
+		Take a stalk of celery per person. Cut it into pieces with a knife. Add it to the peas.
+		
+		Take a carrot per person. Cut it into pieces. With a knife! Add it to the peas.
+		
+		Cook for 10 more minutes.
+	
+- And the second recipe:
+
+		Per person: 1 cup dried split peas, half a chopped onion, a stalk of celery, and a carrot.
+		
+		Soak peas for 12 hours. Simmer for 2 hours in 4 cups of water (per person).
+		
+		Chop and add vegetables and cook for 10 more minutes.
+
+- Abstracting array traversal:
+
+		var array = [1, 2, 3];
+		for (var i = 0; i < array.length; i++) {
+			var current = array[i];
+			console.log(current);
+		}
+
+
+		function logEach(array) {
+			for (var i = 0; i < array.length; i++)
+				console.log(array[i]);
+		}
+
+- What if you do something other action than logging? Pass action function as parameter:
+
+		function forEach(array , action) {
+			for (var i = 0; i < array.length; i++)
+			action(array[i]);
+		}
+
+		forEach(["Wampeter", "Foma", "Granfalloon"], console.log);
+		
