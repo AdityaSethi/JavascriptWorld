@@ -104,3 +104,5 @@ Functions
 				};
 			};
 		})()()();
+
+- Think of Closure as returning a handle to a piece of computation, frozen for later use.
