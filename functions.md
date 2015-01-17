@@ -62,5 +62,36 @@ Functions
 	- arguments
 	- See add. in console
 
-				add.call(null, 1, 2);
-				add.apply(null, [1, 2]);
+			add.call(null, 1, 2);
+			add.apply(null, [1, 2]);
+
+
+## Closure:
+- A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain.
+- The closure has three scope chains: 
+	- it has access to its own scope (variables defined between its curly brackets)
+	- it has access to the outer function's variables
+	- and, obviously, it has access to the global variables
+
+			var g = 'global';
+			(function () {
+				var a = 'a';
+					return function () {
+						var b = g + a + 'b';
+						return b;
+					}
+			})()();
+	
+	
+- Deeper closures:
+	
+		(function () {
+			var a = 'a';
+			return function () {
+				var b = a + 'b';
+				return function () {
+					var c = b + 'c';
+					return c;
+				};
+			};
+		})()()();
