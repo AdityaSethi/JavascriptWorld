@@ -190,3 +190,29 @@ Higher-Order Functions
 
 		forEach(["Wampeter", "Foma", "Granfalloon"], console.log);
 		
+- Using built in forEach instead of for loop:
+
+		function nestedForLoops(books) {
+			var booksObj = {};
+			for (var book = 0; book < books.length; book++) {
+				var chapters = books[book].chapters;
+				booksObj[books] = {};
+				for (var i = 0; i < chapters.length; i++) {
+					var chapter = chapters[i];
+					booksObj[books][chapter] = chapter.tableOfContent;
+				}
+			}
+			return booksObj;
+		}
+		
+		//Using forEach loop:
+		function nestedForLoops(books) {
+			var booksObj = {};
+			books.forEach(function(book) {
+				booksObj[books] = {};
+				book.chapters.forEach(function(chapter) {
+					booksObj[books][chapter] = chapter.tableOfContent;
+				});
+			});
+			return booksObj;
+		}
