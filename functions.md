@@ -216,3 +216,35 @@ Higher-Order Functions
 			});
 			return booksObj;
 		}
+
+## Higher-order functions:
+
+- Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+ 
+		function greaterThan(n) {
+			return function(m) { return m > n; };
+		}
+		var greaterThan10 = greaterThan(10); console.log(greaterThan10(11)); // → true
+		
+		----------------------------------------------------------------------------------------
+
+		function noisy(f) {
+			return function(arg) {
+				console.log("calling with", arg);
+				var val = f(arg);
+				console.log("called with", arg, "- got", val); return val;
+			};
+		}
+		noisy(Boolean)(0);
+		// → calling with 0
+		// → called with 0 - got false
+		
+
+### Passing along arguments:
+- What if there are more than one argument ?
+
+		function noisy(f) {
+			return function () {
+				return f.apply(null, arguments);
+			};
+		}
