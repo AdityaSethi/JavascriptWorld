@@ -248,3 +248,23 @@ Higher-Order Functions
 				return f.apply(null, arguments);
 			};
 		}
+
+### Filtering an array:
+
+	function filter(array , test) {
+		var passed = [];
+		for (var i = 0; i < array.length; i++) {
+			if (test(array[i]))
+				passed.push(array[i]);
+		}
+		return passed; 
+	}
+
+	console.log(filter(books, function(book)
+		return book.pages > 500;
+	}));
+	
+	//Using built in filter
+	console.log(books.filter(function(book)
+		return book.pages > 500;
+	}));
