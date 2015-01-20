@@ -402,5 +402,56 @@ Higher-Order Functions
 		concatObj.call(otherObj);
 		concatObj.apply(otherObj);
  
+ 
+## Exercises:
+ 
+- Array flattening:
+ 		
+		var arrays = [[1, 2, 3], [4, 5], [6]];
+		// Your code here.
+		// → [1, 2, 3, 4, 5, 6]
 
+- Mother-child average age difference:
 
+		function average(array) {
+		  function plus(a, b) { return a + b; }
+		  return array.reduce(plus) / array.length;
+		}
+		
+		var byName = {};
+		ancestry.forEach(function(person) {
+		  byName[person.name] = person;
+		});
+		
+		// Your code here.
+		
+		// → 31.2
+		
+- Historical life expectancy:
+ 
+		function average(array) {
+		  function plus(a, b) { return a + b; }
+		  return array.reduce(plus) / array.length;
+		}
+		
+		// Your code here.
+		
+		// → 16: 43.5
+		//   17: 51.2
+		//   18: 52.8
+		//   19: 54.8
+		//   20: 84.7
+		//   21: 94
+
+- every and then method:
+
+		// Your code here.
+
+		console.log(every([NaN, NaN, NaN], isNaN));
+		// → true
+		console.log(every([NaN, NaN, 4], isNaN));
+		// → false
+		console.log(some([NaN, 3, 4], isNaN));
+		// → true
+		console.log(some([2, 3, 4], isNaN));
+		// → false
