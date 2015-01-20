@@ -373,3 +373,34 @@ Higher-Order Functions
 	}
 	
 	console.log(longLivingPercentage(byName["Emile Haverbeke"])); // → 0.145
+
+## Binding:
+
+- The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
+		add = function(a, b, c) {
+			return a + b + c;
+		}
+	
+		var add1 = add.bind(null, 1);
+		add1(2, 3);
+	
+		var add11 = add.bind(null, 1, 1);
+		add11(2);
+	
+		var concat = function() {
+			return this.a + this.b + this.c;
+		}
+	
+		var obj = {a: 'a', b: 'b', c: 'c'};
+	
+		var concatObj = concat.bind(obj);
+		concatObj();
+	
+		//Can't override bound object
+		var otherObj = {a: '1', b: '2', c: '3'};
+		concatObj.call(otherObj);
+		concatObj.apply(otherObj);
+ 
+
+
