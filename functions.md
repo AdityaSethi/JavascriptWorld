@@ -264,7 +264,25 @@ Higher-Order Functions
 		return book.pages > 500;
 	}));
 	
-	//Using built in filter
+	//Using built in array filter method
 	console.log(books.filter(function(book)
 		return book.pages > 500;
+	}));
+
+### Transforming with map:
+
+	function map(array , transform) {
+		var mapped = [];
+		for (var i = 0; i < array.length; i++)
+			mapped.push(transform(array[i]));
+		return mapped;
+	}
+
+	console.log(map(books, function(book) {
+		return book.name;
+	}));
+	
+	//Using built in array map method
+	console.log(books.map(function(book) {
+		return book.name;
 	}));
