@@ -321,3 +321,55 @@ Higher-Order Functions
 		console.log(average(ancestry.filter(male).map(age)));
 		console.log(average(ancestry.filter(female).map(age)));
 	
+### Finding % DNA shared with an ancestor:
+
+- We share more than 1/2^G of my genes with an ancestor, where G is number of generations between the ancestor and us. This formula comes from the idea that each generation splits the gene pool in two.
+
+		var byName = {};
+		ancestry.forEach(function(person) {
+			byName[person.name] = person;
+		});
+	
+		console.log(byName["Philibert Haverbeke"]); // → {name: "Philibert Haverbeke", ...}
+	
+		function reduceAncestors(person , f, defaultValue) {
+			function valueFor(person) {
+				if (person == null)
+					return defaultValue;
+				else
+					return f(person, valueFor(byName[person.mother]), valueFor(byName[person.father]));
+			}
+			return valueFor(person);
+		}
+	
+		function sharedDNA(person , fromMother , fromFather) {
+			if (person.name == "Pauwels van Haverbeke")
+				return 1;
+			else
+				return (fromMother + fromFather) / 2;
+		}
+	
+		var ph = byName["Philibert Haverbeke"];
+		console.log(reduceAncestors(ph, sharedDNA , 0) / 4); // → 0.00049 
+
+### Finding % of known ancestors, for a given person, who lived past 70:
+
+	function countAncestors(person , test) {
+		function combine(person, fromMother, fromFather) {
+			var thisOneCounts = test(person);
+			return fromMother + fromFather + (thisOneCounts ? 1 : 0);
+		}
+		return reduceAncestors(person , combine , 0);
+	}
+
+	function longLivingPercentage(person) {
+		var all = countAncestors(person , function(person) {
+			return true;
+		});
+		var longLiving = countAncestors(person , function(person) {
+			return (person.died - person.born) >= 70;
+		});
+		return longLiving / all;
+	}
+	
+	console.log(longLivingPercentage(byName["Emile Haverbeke"])); // → 0.145
