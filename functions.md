@@ -455,3 +455,48 @@ Higher-Order Functions
 		// → true
 		console.log(some([2, 3, 4], isNaN));
 		// → false
+
+- Given 2 or more unsorted arrays, find the elements common to all of them:
+
+		var a = [1, 3, 2, 5, 3, 7, 3, 5, 9, 0],
+		    b = [2, 4, 7, 5, 1, 2, 8],
+		    c = [5, 3, 7, 6];
+		
+		// Result is [5, 7]
+		
+		var a = [0, 1, 2],
+		    b = [3, 4, 1],
+		    c = [4, 1],
+		    d = [8, 1, 9];
+		    
+		// Result is [1]
+		
+- Given an object, find all "falsy" property values:
+
+		var data = {
+		  title: "The Thing",
+		  authorId: 4488,
+		  publishDate: undefined,
+		  meta: {
+		      type: "script",
+		      refId: null
+		  },
+		  sigma: [
+		      {
+		          name: ["temporal"],
+		          value: 0
+		      }, {
+		          name: "variational",
+		          value: 1
+		      }
+		  ]
+		};
+	
+		data.meta.circular = data.meta;
+	
+		// Result
+		//publishDate: undefined
+		//refId: null
+		//value: 0
+		
+		Take care of circular references like data.meta.circular = data.meta
